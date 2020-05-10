@@ -1,0 +1,12 @@
+.userInput {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#taskList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}

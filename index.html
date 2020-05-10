@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScrip ToDo List</title>
+    <script src="./src/toDoList.js" type="text/JavaScript"></script>
+    <link rel="stylesheet" href="src/styles/toDoList.css" />
+  </head>
+  <body>
+    <div class="userInput">
+      <h1>To Do List</h1>
+      <form onsubmit="submitTask(event)" name="userInput">
+        <label> Enter your task </label>
+        <input type="text" id="task" onkeydown="enterKeyPress(event)" />
+        <button type="submit">Add Task</button>
+        <button type="reset">Cancel</button>
+      </form>
+    </div>
+    <div id="taskList"></div>
+  </body>
+</html>
