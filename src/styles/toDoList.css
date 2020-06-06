@@ -1,12 +1,55 @@
+/* .todoList {
+} */
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  background-color: cornflowerblue;
+  border-radius: 5px;
+}
 .userInput {
+  width: 60%;
+  margin: auto;
   text-align: center;
-  justify-content: center;
+}
+
+.userInput form {
+  font-size: 1.5em;
+}
+.todoList {
+  width: 50%;
   margin: auto;
 }
 
-#taskList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
+.todoList p {
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: background, transform;
+  transition-duration: 1s;
+}
+
+/* .todoList p:nth-child(odd) {
+  background-color: rgb(137, 173, 245);
+} */
+
+/* for having different styling for odd and even elements */
+/* ------------------------------------------------------ */
+/* .todoList p:hover:nth-child(odd) {
+  background-color: rgb(47, 158, 229, 0.8);
+  transform: scale(1.2);
+}
+
+.todoList p:hover:nth-child(even) {
+  background-color: rgb(240, 234, 234, 0.9);
+  transform: scale(1.2);
+} */
+/* ------------------------------------------------------- */
+.todoList p:hover {
+  background-color: rgb(240, 234, 234, 0.9);
+  transform: scale(1.2);
+  color: black;
 }
